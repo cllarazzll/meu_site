@@ -1,23 +1,211 @@
-<section id="descricao">
-    <h1>Acessibilidade na Escola</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Inclusiva | Acessibilidade e Transformação Educacional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <p>
-        A acessibilidade na escola garante que todos os alunos tenham igualdade de acesso à educação,
-        por meio de espaços adaptados, recursos inclusivos e respeito às diferenças, promovendo uma
-        aprendizagem mais justa e acolhedora
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-        </head>
-        <body>
-            <h1> A acessibilidade na escola <h1>
-                
-                garante que todos os alunos tenham igualdade de acesso à educação,
-        por meio de espaços adaptados, recursos inclusivos e respeito às diferenças, promovendo uma
-        aprendizagem mais justa e acolhedora
-            
-        </body>
-        </html>
+  <div class="accessibility-bar" aria-label="Controles de Acessibilidade">
+    <div class="container accessibility-container">
+      <span class="accessibility-title">Acessibilidade:</span>
+      <button id="increase-font" onclick="alterarFonte(2)" aria-label="Aumentar Fonte">A+</button>
+      <button id="decrease-font" onclick="alterarFonte(-2)" aria-label="Diminuir Fonte">A-</button>
+      <button id="toggle-contrast" onclick="alternarContraste()" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Página Inicial Escola Inclusiva">
+        <span>Educa</span>Inclusiva
+      </a>
+      <nav class="navbar" aria-label="Navegação Principal">
+        <button class="hamburger" aria-expanded="false" aria-label="Abrir Menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#pilares">Pilares</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </nav>
+      <a href="#contato" class="btn btn-primary nav-cta">Solicitar Consultoria</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Educação Sem Barreiras</span>
+          <h1>Transforme sua escola em um ambiente verdadeiramente inclusivo e acessível</h1>
+          <p class="hero-lead">
+            Garantimos adequação arquitetônica, pedagógica e tecnológica para instituições de ensino cumprirem as normas LBI e proporcionarem autonomia plena a todos os estudantes.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Adequar Minha Escola</a>
+            <a href="#pilares" class="btn btn-secondary">Conhecer Soluções</a>
+          </div>
+          <div class="hero-badges">
+            <div class="badge-item">
+              <strong>100%</strong>
+              <span>Conforme ABNT NBR 9050</span>
+            </div>
+            <div class="badge-item">
+              <strong>+250</strong>
+              <span>Escolas Otimizadas</span>
+            </div>
+            <div class="badge-item">
+              <strong>Zero</strong>
+              <span>Barreiras Atitudinais</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card-img">
+            <div class="placeholder-art">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+              <span>Espaço Escolar Acessível e Integrado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilares" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fundamentos</span>
+          <h2>Os 3 Pilares da Acessibilidade Escolar</h2>
+          <p>Uma abordagem holística para eliminar barreiras físicas, comunicacionais e de aprendizagem.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="info-card">
+            <div class="card-icon">♿</div>
+            <h3>Acessibilidade Arquitetônica</h3>
+            <p>Rampas normatizadas, pisos tateis, banheiros adaptados, sinalização em Braille e eliminação de obstáculos físicos no campus escolar.</p>
+          </article>
+          <article class="info-card">
+            <div class="card-icon">💻</div>
+            <h3>Acessibilidade Tecnológica</h3>
+            <p>Software leitor de tela, teclados adaptados, plataformas EAD acessíveis (WCAG) e tecnologias assistivas de última geração.</p>
+          </article>
+          <article class="info-card">
+            <div class="card-icon">🧠</div>
+            <h3>Acessibilidade Pedagógica</h3>
+            <p>Capacitação docente, materiais didáticos adaptados, Desenho Universal para a Aprendizagem (DUA) e recursos de Libras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucoes" class="content-section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Infraestrutura</span>
+          <h2>Ambientes Adaptados em Ação</h2>
+          <p>Confira como transformamos espaços educacionais em locais seguros e acolhedores.</p>
+        </div>
+        
+        <div class="carousel-container">
+          <button class="carousel-btn prev" id="carousel-prev" aria-label="Item anterior">❮</button>
+          <div class="carousel-display" id="carousel-display">
+            </div>
+          <button class="carousel-btn next" id="carousel-next" aria-label="Próximo item">❯</button>
+        </div>
+        <div class="carousel-dots" id="carousel-dots">
+          </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Depoimentos</span>
+          <h2>Quem Confia na Nossa Transformação</h2>
+          <p>Gestores escolares e educadores que alcançaram a verdadeira inclusão.</p>
+        </div>
+        <div class="cards-grid">
+          <blockquote class="testimonial-card">
+            <p>"A consultoria da EducaInclusiva adequou nosso colégio em tempo recorde. Hoje, nossos alunos com deficiência têm total autonomia nos corredores e salas."</p>
+            <footer>
+              <strong>Profa. Helena Silveira</strong>
+              <span>Diretora Pedagógica - Colégio Horizonte</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"O treinamento com o corpo docente mudou nossa visão. O Desenho Universal para Aprendizagem elevou a nota de toda a turma."</p>
+            <footer>
+              <strong>Carlos Eduardo Ramos</strong>
+              <span>Coordenador do Instituto Educacional Futuro</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="content-section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Esclarecimentos</span>
+          <h2>Perguntas Frequentes</h2>
+          <p>Tire suas dúvidas sobre prazos, normas legais e implementação.</p>
+        </div>
+        <div class="accordion-wrapper" id="accordion-container">
+          </div>
+      </div>
+    </section>
+
+    <section id="contato" class="content-section">
+      <div class="container form-container">
+        <div class="form-copy">
+          <span class="section-tag">Atendimento Prioritário</span>
+          <h2>Receba um Diagnóstico de Acessibilidade Gratuito</h2>
+          <p>Preencha os dados da sua instituição e receba a avaliação preliminar sobre adequação à Lei Brasileira de Inclusão.</p>
+        </div>
+        <form class="lead-form" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Entraremos em contato em breve.');">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" required placeholder="Ex: Maria Silva">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail Profissional</label>
+            <input type="email" id="email" required placeholder="maria@escola.com.br">
+          </div>
+          <div class="form-group">
+            <label for="escola">Nome da Instituição de Ensino</label>
+            <input type="text" id="escola" required placeholder="Colégio Exemplo">
+          </div>
+          <div class="form-group">
+            <label for="alunos">Número de Alunos</label>
+            <select id="alunos" required>
+              <option value="">Selecione a faixa...</option>
+              <option value="1">Até 200 alunos</option>
+              <option value="2">200 a 800 alunos</option>
+              <option value="3">Mais de 800 alunos</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Garantir Diagnóstico Gratuito</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span>Educa</span>Inclusiva</span>
+        <p>Promovendo o direito de aprender para todos, sem exceção.</p>
+      </div>
+      <p class="copyright">&copy; 2026 EducaInclusiva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
